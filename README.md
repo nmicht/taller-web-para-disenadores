@@ -9,4 +9,5 @@ Los detalles de los temas y sus contenidos teóricos los podrás consultar en cu
 
 ## Ejercicios
 Los ejercicios prácticos con código comentado para facilidad de entendimiento lo puedes ver en la sección de [código](https://github.com/nmicht/prog-para-disenadores).  
-Si no estas familiarizado con GitHub, no te preocupes, puedes descargar un archivo comprimido con los ejercicios en esta liga. [Descargar comprimido](https://github.com/nmicht/prog-para-disenadores/archive/master.zip) 
+Si no estas familiarizado con GitHub, no te preocupes, puedes descargar un archivo comprimido con los ejercicios en esta liga. [Descargar comprimido](https://github.com/nmicht/prog-para-disenadores/archive/master.zip).  
+De igual manera los ejercicios y lecciones los puedes encontrar en [JSFiddle](http://jsfiddle.net/user/nmicht/fiddles/)
