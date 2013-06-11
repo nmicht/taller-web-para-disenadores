@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Título de la página</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="description" content="Free Web tutorials" />
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+	<meta name="author" content="Michelle Torres" />
+</head>
+<body>
+	<!-- Creo una tabla -->
+	<table>
+		<!-- Título de la tabla -->
+		<caption>Mi tabla</caption>
+		<!-- Sección para encabezados -->
+		<thead>
+			<!-- Primer fila del encabezado -->
+			<tr>
+				<!-- La primer celda de encabezado -->
+				<th>Código</th>
+				<th>Nombre</th>
+				<th>Descripción</th>
+				<th>Precio</th>
+				<th>Imágen</th>
+			</tr>
+			<!-- Aquí podemos agregar mas filas, pero no las necesitamos en este caso -->
+		</thead>
+		<!-- El cuerpo de la tabla -->
+		<tbody>
+			<!-- La primera fila con contenidos -->
+			<tr>
+				<!-- Los datos de un producto -->
+				<td>12345678</td>
+				<td>Tableta digitalizadora</td>
+				<td>
+					Marca: patito<br />
+					Garantía: 1 años<br />
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum faucibus arcu vitae molestie. Donec in leo suscipit, ullamcorper urna quis, posuere augue.
+				</td>
+				<td>$552.00</td>
+				<td><img src="http://www.machuca.biz/wp-content/uploads/2008/06/mousepen-8x6.jpg" width="100"/></td>
+			</tr>	
+			<!-- Aquí repetimos todas las celdas que queramos -->
+		</tbody>
+		<!-- Podemos tener varios body, en caso que quisieramos separar semánticamente los contenidos -->
+		<!-- Agregamos un pie a la tabla para totales -->
+		<tfoot>
+			<!-- Fila para el pie -->
+			<tr>
+				<!-- uno todas las columnas para solo dejar la del final -->
+				<td colspan="4">Total de productos</td>
+				<td>n</td>
+			</tr>	
+			<tr>
+				<!-- Uno varias celdas pues no me importa pie para codigo, nombre ni descripción -->
+				<td colspan="3"></td>
+				<td>$mucho</td>
+				<td></td>
+			</tr>	
+		</tfoot>	
+		
+	</table>
+</body>
+</html>
