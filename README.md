@@ -5,7 +5,7 @@ En este taller aprenderás las bases de la programación para generar un sitio w
 
 ## Contenido
 Este curso tiene un amplio contenido.  
-Los detalles de los temas y sus contenidos teóricos los podrás consultar en cualquier momento en la [wiki](https://github.com/nmicht/prog-para-disenadores/wiki/Contenido).
+Los detalles de los temas y sus contenidos teóricos los podrás consultar en cualquier momento en la [wiki](https://github.com/nmicht/prog-para-disenadores/wiki).
 
 ## Ejercicios
 Los ejercicios prácticos con código comentado para facilidad de entendimiento lo puedes ver en la sección de [código](https://github.com/nmicht/prog-para-disenadores).  
