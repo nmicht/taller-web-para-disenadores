@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validación HTML5 - Programación Web para Diseñadores</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="description" content="Curso Programación Web para Diseñadores" />
+	<meta name="keywords" content="HTML5, formularios" />
+	<meta name="author" content="Michelle Torres" />
+</head>
+<body>
+	<h1>Registrar usuario</h1>
+	<!-- Creo el formulario enviando las variables por la url y enviandolas a este mismo archivo -->
+	<!-- el enctype es obligatorio para poder subir archivos -->
+	<form action="" method="GET">
+		<!-- los label se usan para ligar la etiqueta con el input -->
+		<label for="nombre">Nombre <span>*</span></label>
+		<!-- el name se usa para cuando se envie el valor -->
+		<!-- Value se utiliza para definir el valor que tiene por default un input -->
+		<!-- atributo required para hacerlo obligatorio -->
+		<input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Juan Perez" required="required"/>
+		<br />
+		<label for="correo">Correo <span>*</span></label>
+		<!-- atributo required sin el valor tambien funciona -->
+		<input type="email" id="correo" name="correo" placeholder="Ejemplo: correo@correo.com" required/>
+		<br />
+		<label for="cp">Código postal</label>
+		<input type="text" id="cp" name="cp" pattern="\d{5}"/>
+		<br />
+		<label for="comentarios">Comentarios</label>
+		<br />
+		<!-- los textarea son amplios, no confundir con los input -->
+		<textarea id="comentarios" name="comentarios" cols="70" rows="10" placeholder="Ponga aquí sus comentarios"></textarea>
+		<br />
+		<label for="comentarios">Motivo de contacto <span>*</span></label>
+		<select>
+			<!-- El value puede ser un número o una cadena -->
+			<!-- Se puede utilizar la propiedad selected para indicar que una opcion ya esta elegida -->
+			<option value="0">Elige una opción</option>
+			<option value="1">Soporte</option>
+			<option value="2" selected>Comentarios</option>
+			<option value="3">Quejas</option>
+		</select>
+		<br />
+		<label for="sexo">Sexo <span>*</span></label>
+		<br />
+		<!-- todas las opciones deben tener el mismo nombre -->
+		<!-- checked se utiliza para indicar que ese radio o checkbox esta seleccionado -->
+		<input type="radio" id="" name="sexo" value="f" checked />
+		<label for="radioF">F</label>
+		<input type="radio" id="" name="sexo" value="m"/>
+		<label for="radioM">M</label>
+		<br />
+		<!-- fieldset es un marco que engloba varias cosas -->
+		<fieldset>
+			<!-- legend debe ir siempre como primer elemento del fieldset -->
+			<legend>Intereses</legend>
+			<!-- los checkbox deben tener el mismo nombre -->
+			<input type="checkbox" id="check1" name="intereses" value="1"/>
+			<label for="check1">Algo1</label>
+			<input type="checkbox" id="" name="intereses" value="2"/>
+			<label for="check2">Algo2</label>
+			<input type="checkbox" id="" name="intereses" value="3"/>
+			<label for="check3">Algo3</label>
+			<input type="checkbox" id="" name="intereses" value="4"/>
+			<label for="check4">Algo4</label>
+			<input type="checkbox" id="" name="intereses" value="5" checked/>
+			<label for="check5">Algo5</label>
+			<input type="checkbox" id="" name="intereses" value="6"/>
+			<label for="check6">Algo6</label>
+		</fieldset>
+		<!-- boton para limpiar -->
+		<button type="reset">Limpiar</button>
+		<!-- boton para enviar -->
+		<button type="submit">Enviar</button>	
+	</form>
+</body>
+</html>

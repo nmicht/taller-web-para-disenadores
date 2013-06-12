@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nuevos inputs de HTML5 - Programación Web para Diseñadores</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="description" content="Curso Programación Web para Diseñadores" />
+	<meta name="keywords" content="HTML5, formularios" />
+	<meta name="author" content="Michelle Torres" />
+</head>
+<body>
+	<h1>Nuevos inputs de HTML5</h1>
+	<!-- Creo el formulario enviando las variables por la url y enviandolas a este mismo archivo -->
+	<!-- el enctype es obligatorio para poder subir archivos -->
+	<form action="" method="GET">
+		<label for="bday">Cumpleaños</label> 
+		<input type="date" id="bday" name="bday" />
+		<br />
+		<label for="mesanio">Ingresa el mes y año de tu cumpleaños</label>
+		<input type="month" id="mesanio" name="mesanio" />
+		<br />
+		<label for="hr">Ingresa la hora</label>
+		<input type="time" id="hr" name="hr" />
+		<br />
+		<label for="wk">Ingresa la semana y el año</label>
+		<input type="week" id="wk" name="wk" />
+		<br />
+		<label for="mail">Correo</label> 
+		<input type="email" id="mail" name="mail" />
+		<br />
+		<label for="num">Ingresa un número entre 1 y 5</label>
+		<input type="number" id="num" name="num" min="1" max="5" />
+		<br />
+		<label for="pto">Elija el puntaje</label>
+		<input type="range" name="pto" id="pto" min="1" max="15" />
+		<br />
+		<label for="busq">Búsqueda en google</label>
+		<input type="search" id="busq" name="busq" />
+		<br />
+		<label for="web">Ingrese su página</label>
+		<input type="url" id="web" name="web" />
+		<br />
+		<!-- boton para limpiar -->
+		<button type="reset">Limpiar</button>
+		<!-- boton para enviar -->
+		<button type="submit">Enviar</button>	
+	</form>
+</body>
+</html>

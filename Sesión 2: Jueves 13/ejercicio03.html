@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 03 - Programación Web para Diseñadores</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="description" content="Curso Programación Web para Diseñadores" />
+	<meta name="keywords" content="HTML5, formularios" />
+	<meta name="author" content="Michelle Torres" />
+</head>
+<body>
+
+	<h1>Quiero bajar de peso</h1>
+	<!-- Crea un formulario -->
+	<form action="" method="GET">
+	<!-- Crea una sección con el titulo datos personales -->
+		<fieldset>
+			<legend>Datos generales</legend>
+			<!-- Agrega un campo para el nombre, debe ser un campo obligatorio y metele validación -->
+			<label for="nombre">Nombre <span>*</span></label>
+			<input type="text" id="nombre" name="nombre" pattern="\w+" required/>
+
+			<!-- Agrega dos radios para seleccionar el sexo -->
+			<!-- El sexo femenino ya debe estar seleccionado -->
+			<label for="sexo">Sexo</label>
+			<input type="radio" id="radioF" name="sexo"/>
+			<label for="radioF">Femenino</label>
+			<input type="radio" id="radioF" name="sexo"/>
+			<label for="radioM">Masculino</label>
+
+			<!-- Agrega una lista desplegable para seleccionar el color de ojos -->
+			<!-- El valor que se envie debe ser el color -->
+			<label for="ojos">Color de ojos</label>
+			<select id="ojos" name="ojos">
+				<option>Seleeciona un color ...</option>
+				<option value="verde">Verde</option>
+				<option value="cafe">Cafe</option>
+				<option value="negro">Negro</option>
+			</select>
+
+			<!-- Aquí debe terminar la sección de datos personales -->
+		</fieldset>
+
+
+			<!-- Agrega varios checkbox para elegir caracteristicas de peso y talla -->
+			<!-- Los checkbox deben estar dentro de un legend -->
+			<fieldset>
+				<legend>Selecciona todas las que apliquen a tu talla y peso</legend>
+				<input type="checkbox" id="tallapeso1" name="tallapeso" />
+				<label for="tallapeso1">Mas de 1.60 de altura</label>
+				<input type="checkbox" id="tallapeso2" name="tallapeso" />
+				<label for="tallapeso2">Mas de 60kg</label>
+				<input type="checkbox" id="tallapeso3" name="tallapeso" />
+				<label for="tallapeso3">Mas de 1.80 de altura</label>
+				<input type="checkbox" id="tallapeso4" name="tallapeso" />
+				<label for="tallapeso4">Mas de 80kg</label>
+			</fieldset>
+
+			<!-- Agrega una sección de texto amplia para que el usuario describa sus capacidades atleticas -->
+			<!-- Forza a que se envie con los ajustes de linea -->
+			<label for="atletico">Describe tus capacidades atleticas</label>
+			<textarea cols="60" rows="5" wrap placeholder="Ejemplo: Tengo buena resistencia al correr..."></textarea>
+
+			<!-- Agrega un campo para que el usuario suba una foto -->
+			<!-- Solo debes aceptar imágenes -->
+			<!-- Recuerda hacer las modificaciones necesarias al formulario para que funcione el envio de la imagen -->
+			<label for="foto">Sube tu foto actual</label>
+			<input type="file" id="foto" name="foto" accept="image/*" />
+
+			<!-- Agrega un campo para que el usuario seleccione una fecha limite para bajar de peso -->
+			<label for="fecha">Cuál será tu fecha límite para bajar</label>
+			<input type="date" id="fecha" name="fecha" />
+
+			<!-- Agrega una barra para que el usuario pueda elegir un rango de la cantidad de kilos que desea bajar -->
+			<label for="kilos">Cuantos kilos quieres bajar</label>
+			<input type="range" min="1" max="10" />
+
+			<!-- Pon un botón para enviar el formulario -->
+			<button type="submit">Enviar</button>
+	</form>
+</body>
+</html>

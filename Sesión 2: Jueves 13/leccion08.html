@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio y video - Programación Web para Diseñadores</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="description" content="Curso Programación Web para Diseñadores" />
+	<meta name="keywords" content="HTML5, audio, video" />
+	<meta name="author" content="Michelle Torres" />
+</head>
+<body>
+	<h1>Insertamos un video aquí</h1>
+	<h2>Intentará primero Popeye, luego conejo, y sino, error</h2>
+	<!-- Para el source tenemos los atributos:
+	type : tipo de archivo o fuente
+	src : URL del archivo a reproducir
+
+	Para el video tenemos los atributos:
+	autoplay : reproduce automáticamente
+	controls : muestra los controles de reproducción
+	height : define la altura del reproductor (en píxeles)
+	loop : ejecuta la reproducción en bucle, cuando finaliza vuelve a empezar
+	mute : especifica que la salida de audio del video debería ser silenciado
+	poster : permite poner la url de una imágen antes de que se reproduzca el video
+	pre-load : manda a cargar el video antes de reproducirlo, de este modo al oprimir reproducir, no hay que esperar a que se cargue. Sus valores pueden ser none, metadata y auto
+	width : define el ancho del reproductor (en píxeles) 
+	-->
+
+	<!-- primero va a intentar reproducir popeye, y si no se puede, conejo, y sino, pone el mensaje de error -->
+	<video width="320" height="240" controls="controls" pre-load="auto">
+	  <source src="http://archive.org/download/fright_to_the_finish/fright_to_the_finish.ogv" type="video/ogg" />
+	  <source src="http://archive.org/download/BigBuckBunny_310/big_buck_bunny_640.mp4" type="video/mp4" />
+	  Chan chan chan, no se puede reproducir el video.
+	</video>
+
+	<h1>Insertamos un audio</h1>
+	<h2>Intentará primero canción, luego audiolibro, y sino, error</h2>
+	<!--
+	type : tipo de archivo o fuente
+	autoplay : reproduce automáticamente
+	controls : muestra los controles de reproducción
+	loop : ejecuta la reproducción en bucle, cuando finaliza vuelve a empezar
+	pre-load : manda a cargar el audio antes de reproducirlo, de este modo al oprimir reproducir, no hay que esperar a que se cargue. Sus valores pueden ser none, metadata y auto
+	src : URL del archivo a reproducir
+	-->
+	<audio controls="controls" autoplay>
+		<source src="http://storage-new1.newjamendo.com/tracks/466992_112.ogg" type="audio/ogg" />
+		<source src="http://www.archive.org/download/anon-ctos-angel/albalearning-elangeldelosninos_cuentos-sp.mp3" type="audio/mp3" />
+		Tu navegador no soporta reproducción de audio sin necesidad de un plugin
+	</audio>
+
+
+</body>
+</html>

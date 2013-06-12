@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario - Programación Web para Diseñadores</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="description" content="Curso Programación Web para Diseñadores" />
+	<meta name="keywords" content="HTML5, formularios" />
+	<meta name="author" content="Michelle Torres" />
+</head>
+<body>
+	<!-- Creo el formulario enviando las variables por la url y enviandolas a este mismo archivo -->
+	<form action="" method="GET">
+		<!-- los label se usan para ligar la etiqueta con el input -->
+		<label for="nombre">Nombre</label>
+		<!-- el name se usa para cuando se envie el valor -->
+		<input type="text" id="nombre" name="nombre" />
+		<br />
+		<!-- Un input de tipo correo se valida automaticamente con html5 -->
+		<label for="correo">Correo</label>
+		<input type="email" id="correo" name="correo" />
+		<br />
+		<label for="comentarios">Comentarios</label>
+		<br />
+		<!-- los textarea son amplios, no confundir con los input -->
+		<textarea id="comentarios" name="comentarios" cols="70" rows="10"></textarea>
+		<br />
+		<label for="comentarios">Motivo de contacto</label>
+		<select>
+			<!-- El value puede ser un número o una cadena -->
+			<option value="0">Elige una opción</option>
+			<option value="1">Soporte</option>
+			<option value="2">Comentarios</option>
+			<option value="3">Quejas</option>
+		</select>
+		<br />
+		<label for="sexo">Sexo</label>
+		<br />
+		<!-- todas las opciones deben tener el mismo nombre -->
+		<input type="radio" id="" name="sexo" value="f"/>F
+		<input type="radio" id="" name="sexo" value="m"/>M
+		<br />
+		<!-- fieldset es un marco que engloba varias cosas -->
+		<fieldset>
+			<!-- legend debe ir siempre como primer elemento del fieldset -->
+			<legend>Intereses</legend>
+			<!-- los checkbox deben tener el mismo nombre -->
+			<input type="checkbox" id="check1" name="intereses" value="1"/>
+			<label for="check1">Algo1</label>
+			<input type="checkbox" id="" name="intereses" value="2"/>
+			<label for="check2">Algo2</label>
+			<input type="checkbox" id="" name="intereses" value="3"/>
+			<label for="check3">Algo3</label>
+			<input type="checkbox" id="" name="intereses" value="4"/>
+			<label for="check4">Algo4</label>
+			<input type="checkbox" id="" name="intereses" value="5"/>
+			<label for="check5">Algo5</label>
+			<input type="checkbox" id="" name="intereses" value="6"/>
+			<label for="check6">Algo6</label>
+		</fieldset>
+		<!-- boton para limpiar -->
+		<button type="reset">Limpiar</button>
+		<!-- boton para enviar -->
+		<button type="submit">Enviar</button>
+	</form>
+</body>
+</html>
