@@ -10,7 +10,7 @@
 </head>
 <body>
 	<!-- Creo una tabla -->
-	<table>
+	<table border="1">
 		<!-- Título de la tabla -->
 		<caption>Mi tabla</caption>
 		<!-- Sección para encabezados -->
@@ -39,7 +39,9 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum faucibus arcu vitae molestie. Donec in leo suscipit, ullamcorper urna quis, posuere augue.
 				</td>
 				<td>$552.00</td>
-				<td><img src="http://www.machuca.biz/wp-content/uploads/2008/06/mousepen-8x6.jpg" width="100"/></td>
+				<td>
+					<img src="http://www.machuca.biz/wp-content/uploads/2008/06/mousepen-8x6.jpg" width="100"/>
+				</td>
 			</tr>	
 			<!-- Aquí repetimos todas las celdas que queramos -->
 		</tbody>
@@ -49,14 +51,16 @@
 			<!-- Fila para el pie -->
 			<tr>
 				<!-- uno todas las columnas para solo dejar la del final -->
-				<td colspan="4">Total de productos</td>
+				<td colspan="2">Total de productos</td>
 				<td>n</td>
+				<td></td>
+				<td rowspan="2">Esta abarca dos filas</td>
 			</tr>	
 			<tr>
 				<!-- Uno varias celdas pues no me importa pie para codigo, nombre ni descripción -->
 				<td colspan="3"></td>
 				<td>$mucho</td>
-				<td></td>
+				
 			</tr>	
 		</tfoot>	
 		

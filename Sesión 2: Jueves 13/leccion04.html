@@ -16,6 +16,7 @@
 		<!-- el name se usa para cuando se envie el valor -->
 		<input type="text" id="nombre" name="nombre" />
 		<br />
+
 		<!-- Un input de tipo correo se valida automaticamente con html5 -->
 		<label for="correo">Correo</label>
 		<input type="email" id="correo" name="correo" />
@@ -26,19 +27,24 @@
 		<textarea id="comentarios" name="comentarios" cols="70" rows="10"></textarea>
 		<br />
 		<label for="comentarios">Motivo de contacto</label>
-		<select>
+		<select >
 			<!-- El value puede ser un número o una cadena -->
+
 			<option value="0">Elige una opción</option>
-			<option value="1">Soporte</option>
-			<option value="2">Comentarios</option>
-			<option value="3">Quejas</option>
+			
+				<option value="1">Soporte</option>
+				<option value="2">Comentarios</option>
+			
+			<option value="3" selected>Quejas</option>
 		</select>
 		<br />
 		<label for="sexo">Sexo</label>
 		<br />
 		<!-- todas las opciones deben tener el mismo nombre -->
-		<input type="radio" id="" name="sexo" value="f"/>F
-		<input type="radio" id="" name="sexo" value="m"/>M
+		<input type="radio" id="s1" name="sexo" value="f"/>
+		<label for="s1">Femenino</label>
+
+		<input type="radio" id="" name="sexo" value="m"/>Masculino
 		<br />
 		<!-- fieldset es un marco que engloba varias cosas -->
 		<fieldset>

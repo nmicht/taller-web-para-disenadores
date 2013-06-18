@@ -7,32 +7,38 @@
 	<meta name="description" content="Curso Programación Web para Diseñadores" />
 	<meta name="keywords" content="HTML5, formularios" />
 	<meta name="author" content="Michelle Torres" />
+	<!-- Mostrando porque usar label en lugar de texto suelto, ya que de esta manera salta lina automático -->
+	<style>
+		label{
+			display: block;
+		}
+	</style>
 </head>
 <body>
 
 	<h1>Quiero bajar de peso</h1>
 	<!-- Crea un formulario -->
-	<form action="" method="GET">
+	<form action="" method="GET" enctype="multipart/form-data">
 	<!-- Crea una sección con el titulo datos personales -->
 		<fieldset>
 			<legend>Datos generales</legend>
 			<!-- Agrega un campo para el nombre, debe ser un campo obligatorio y metele validación -->
 			<label for="nombre">Nombre <span>*</span></label>
-			<input type="text" id="nombre" name="nombre" pattern="\w+" required/>
+			<input type="text" id="nombre" name="nombre" pattern="[a-zA-Z]{2,}" required/>
 
 			<!-- Agrega dos radios para seleccionar el sexo -->
 			<!-- El sexo femenino ya debe estar seleccionado -->
-			<label for="sexo">Sexo</label>
+			<h5>Sexo</h5>
 			<input type="radio" id="radioF" name="sexo"/>
 			<label for="radioF">Femenino</label>
-			<input type="radio" id="radioF" name="sexo"/>
+			<input type="radio" id="radioM" name="sexo"/>
 			<label for="radioM">Masculino</label>
 
 			<!-- Agrega una lista desplegable para seleccionar el color de ojos -->
 			<!-- El valor que se envie debe ser el color -->
 			<label for="ojos">Color de ojos</label>
 			<select id="ojos" name="ojos">
-				<option>Seleeciona un color ...</option>
+				<option>Selecciona un color ...</option>
 				<option value="verde">Verde</option>
 				<option value="cafe">Cafe</option>
 				<option value="negro">Negro</option>
@@ -59,7 +65,7 @@
 			<!-- Agrega una sección de texto amplia para que el usuario describa sus capacidades atleticas -->
 			<!-- Forza a que se envie con los ajustes de linea -->
 			<label for="atletico">Describe tus capacidades atleticas</label>
-			<textarea cols="60" rows="5" wrap placeholder="Ejemplo: Tengo buena resistencia al correr..."></textarea>
+			<textarea id="atletico" cols="60" rows="5" wrap="hard" placeholder="Ejemplo: Tengo buena resistencia al correr..."></textarea>
 
 			<!-- Agrega un campo para que el usuario suba una foto -->
 			<!-- Solo debes aceptar imágenes -->
@@ -73,7 +79,7 @@
 
 			<!-- Agrega una barra para que el usuario pueda elegir un rango de la cantidad de kilos que desea bajar -->
 			<label for="kilos">Cuantos kilos quieres bajar</label>
-			<input type="range" min="1" max="10" />
+			<input type="range" min="2" max="10" step="2" />
 
 			<!-- Pon un botón para enviar el formulario -->
 			<button type="submit">Enviar</button>

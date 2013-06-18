@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>CSS</title>
+	<meta name="description" content="Curso Programación Web para Diseñadores" />
+	<meta name="keywords" content="CSS" />
+	<meta name="author" content="Michelle Torres" />
+	<style type="text/css">
+		/* Las reglas de CSS deben terminar con punto y coma */
+		/* Los selectores por etiqueta se ponen tal cual */
+		/* Esta regla aplica a todos los párrafos */
+		p {
+			color: red;  /* Esto cambia el color a rojo */
+		}
+		/* Con espacio se indica que el elemento tiene que ser hijo del primer elemento */
+		/* Esta regla aplica a todos los span que esten dentro de un párrafo */
+		p span{
+			font-weight: bold; /* Esta regla pone negritas a la letra */
+		}
+		/* Para aplicar reglas a un elemento por su ID se pone numeral */
+		#caja1{
+			background-color: #FFE073;  /* Con esto cambio el color del fondo */
+		}
+		#caja2{
+			background-color: #9F69D6;
+		}
+		#caja3{
+			background-color: #689AD3;
+		}
+		#caja4{
+			background-color: #EC6AA1;
+		}
+		/* Se puede aplicar una regla a distintos elementos que no sean de la misma etiqueta y que no sea todos por medio de clases */
+		.miclase{
+			font-family: Comic Sans Ms;
+		}
+	</style>
+</head>
+<body>
+	Texto solo<br />
+	<span>Texto en un span</span>
+	<p class="miclase">Un parrafo con clase</p>
+	<p>Un párrafo con un <span>span</span></p>
+	<p id="mip">Un párrafo con id</p>
+	<!-- Se usa el atributo class para indicar que se le pondrá un estilo a ese elemento por medio de una clase -->
+	<h1 class="miclase">Este es un título con clase</h1>
+	<!-- Los divs son elementos contenedores -->
+	<div id="caja1">Caja 1</div>
+	<div id="caja2">Caja 2</div>
+	<div id="caja3">Caja 3</div>
+	<div id="caja4">Caja 4</div>
+
+	
