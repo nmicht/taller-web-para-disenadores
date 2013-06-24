@@ -1,0 +1,21 @@
+/*********** Rules for social media *******************/
+ul#social-bar{
+	list-style: none;
+}
+
+ul#social-bar li{
+	float: left;
+	margin: 0 5px;
+}
+
+/*********** Rules for images in gallery **************/
+.feature{
+	position: relative;
+}
+.feature2{
+	right: 150px;
+}
+.feature1{
+	z-index: 1;
+}
+/*********** 
