@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Título de la página</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="description" content="Free Web tutorials" />
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+	<meta name="author" content="Michelle Torres" />
+	<style>
+		/*El espacio para el menu */
+		div#menuprincipal{
+			width: 100%;
+			z-index: 1000;
+			top: 1px;
+			position: relative;
+		}
+
+		/* Quito las viñetas */
+		div#menuprincipal ul{
+			list-style: none;
+		}
+
+		/* Acomodo los elementos */
+		div#menuprincipal ul li{
+			float: left;
+			border: 1px solid black;
+			border-top-left-radius: 5px 5px;
+			border-top-right-radius: 5px 5px;
+			background: #E0FA71;
+			padding: 5px 15px;
+			margin: 0 5px;
+
+		}
+
+		/* Quito el subrayado */
+		div#menuprincipal ul li a{
+			text-decoration: none;
+			
+		}
+		div#contenido{
+			border: 1px solid black;
+		}
+		.seleccionado{
+			border-bottom: 1px solid white !important;
+		}
+		/* Limpiar lo que flota */
+		.clear{
+			clear: both;
+		}
+
+		div#navegacion{
+			width: 100%;
+		}
+
+		div#navegacion a{
+			/*background: #D660CC;*/
+			background: -moz-linear-gradient(top, #cb60b3 0%, #c146a1 31%, #a80077 71%, #db36a4 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, #cb60b3), color-stop(31%, #c146a1), color-stop(71%, #a80077), color-stop(100%, #db36a4));
+			background: -webkit-linear-gradient(top, #cb60b3 0%, #c146a1 31%, #a80077 71%, #db36a4 100%);
+			background: -o-linear-gradient(top, #cb60b3 0%, #c146a1 31%, #a80077 71%, #db36a4 100%);
+			background: -ms-linear-gradient(top, #cb60b3 0%, #c146a1 31%, #a80077 71%, #db36a4 100%);
+			background: linear-gradient(to bottom, #cb60b3 0%, #c146a1 31%, #a80077 71%, #db36a4 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=0 );
+			border-radius: 5px 5px;
+			padding: 5px;
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			margin: 0 10px;
+			text-transform: uppercase;
+			-webkit-box-shadow: 10px 12px 36px 3px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px 12px 36px 3px rgba(0,0,0,0.75);
+			box-shadow: 10px 12px 36px 3px rgba(0,0,0,0.75);
+		}
+
+		div#navegacion #anterior{
+			float: left;
+		}
+
+		div#navegacion #siguiente{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<!-- Agrega un banner/imágen que haga función de logotipo -->
+	<!-- La imágen debe ligar a la misma página de inicio (este archivo) -->
+	<a id="inicio" href="index.html"><img src="http://www.mediabistro.com/unbeige/files/2011/02/html.gif" alt="Empresa" />
+
+	<!-- Crea un menú con las ligas de un sitio de presentación de marca -->
+	<!-- Inicio, Nuestros productos, FAQ, Contacto -->
+	<!-- Solo se conoce el link de inicio hacia index.html que es este archivo, los otros links no se conocen -->
+	<div id="menuprincipal">	
+		<ul>
+			<li class="seleccionado"><a href="index.html">Inicio</a></li>
+			<li><a href="#">Nuestros productos</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<div id="contenido">
+	<h1>Inicio</h1>
+	<!-- Crea una lista de definición con los contenidos de acerca de nosotros -->
+	<!-- Utiliza anclas para poder navegar entre los temas -->
+	<ul>
+		<li><a href="#tema1">¿Quiénes somos?</a></li>
+		<li><a href="#tema2">Historia</a></li>
+		<li><a href="#tema3">Misión</a></li>
+		<li><a href="#tema4">Visión</a></li>
+		<li><a href="#tema5">Valores</a></li>
+	</ul>
+	<dl>
+		<dt id="tema1">¿Quienes somos?</dt>
+		<dd>Suspendisse laoreet sed metus id hendrerit. Proin pellentesque eros vitae nisl convallis ultricies. Nulla commodo a metus sed fermentum. Vestibulum pellentesque ornare nisl quis congue. Quisque consequat eget nisi quis dignissim. Cras luctus lacinia sodales. Sed consectetur eleifend metus facilisis cursus. Maecenas at augue hendrerit, faucibus sapien vel, elementum arcu. Aliquam adipiscing vitae ipsum quis vestibulum. Nulla ullamcorper, nibh et suscipit cursus, sapien ante rutrum lorem, ut adipiscing nisl risus sed nibh. Pellentesque id est eget enim facilisis eleifend. Fusce venenatis magna vitae mi cursus, et eleifend orci dignissim. Quisque non lobortis nisi. Maecenas massa ante, sagittis sed ornare eu, ornare ut magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam a purus sem.</dd>
+		<dt id="tema2">Historia</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum faucibus arcu vitae molestie. Donec in leo suscipit, ullamcorper urna quis, posuere augue. Cras enim ante, condimentum id iaculis ut, fringilla a turpis. Nam a lacus vel augue lacinia ultricies. Vestibulum volutpat ante a purus ullamcorper tempus. Mauris at convallis nulla. Suspendisse non felis nibh. Quisque ornare, diam eget elementum tempus, tellus nisi iaculis metus, sit amet iaculis tellus augue sed quam. Praesent fermentum neque id eleifend semper. Donec odio nulla, pellentesque ac tincidunt ut, laoreet eget purus. Ut non nunc augue. Pellentesque scelerisque, ipsum vitae tempus bibendum, nisl tortor consectetur quam, ut viverra sapien arcu tempus quam. Fusce euismod condimentum tristique. Praesent porttitor neque eget mauris adipiscing accumsan. Proin et sollicitudin risus, vel facilisis erat.</dd>
+		<dt id="tema3">Misión</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum faucibus arcu vitae molestie. Donec in leo suscipit, ullamcorper urna quis, posuere augue. Cras enim ante, condimentum id iaculis ut, fringilla a turpis. Nam a lacus vel augue lacinia ultricies. Vestibulum volutpat ante a purus ullamcorper tempus. Mauris at convallis nulla. Suspendisse non felis nibh. Quisque ornare, diam eget elementum tempus, tellus nisi iaculis metus, sit amet iaculis tellus augue sed quam. Praesent fermentum neque id eleifend semper. Donec odio nulla, pellentesque ac tincidunt ut, laoreet eget purus. Ut non nunc augue. Pellentesque scelerisque, ipsum vitae tempus bibendum, nisl tortor consectetur quam, ut viverra sapien arcu tempus quam. Fusce euismod condimentum tristique. Praesent porttitor neque eget mauris adipiscing accumsan. Proin et sollicitudin risus, vel facilisis erat.</dd>
+		<dt id="tema4">Visión</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum faucibus arcu vitae molestie. Donec in leo suscipit, ullamcorper urna quis, posuere augue. Cras enim ante, condimentum id iaculis ut, fringilla a turpis. Nam a lacus vel augue lacinia ultricies. Vestibulum volutpat ante a purus ullamcorper tempus. Mauris at convallis nulla. Suspendisse non felis nibh. Quisque ornare, diam eget elementum tempus, tellus nisi iaculis metus, sit amet iaculis tellus augue sed quam. Praesent fermentum neque id eleifend semper. Donec odio nulla, pellentesque ac tincidunt ut, laoreet eget purus. Ut non nunc augue. Pellentesque scelerisque, ipsum vitae tempus bibendum, nisl tortor consectetur quam, ut viverra sapien arcu tempus quam. Fusce euismod condimentum tristique. Praesent porttitor neque eget mauris adipiscing accumsan. Proin et sollicitudin risus, vel facilisis erat.</dd>
+		<dt id="tema5">Valores</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum faucibus arcu vitae molestie. Donec in leo suscipit, ullamcorper urna quis, posuere augue. Cras enim ante, condimentum id iaculis ut, fringilla a turpis. Nam a lacus vel augue lacinia ultricies. Vestibulum volutpat ante a purus ullamcorper tempus. Mauris at convallis nulla. Suspendisse non felis nibh. Quisque ornare, diam eget elementum tempus, tellus nisi iaculis metus, sit amet iaculis tellus augue sed quam. Praesent fermentum neque id eleifend semper. Donec odio nulla, pellentesque ac tincidunt ut, laoreet eget purus. Ut non nunc augue. Pellentesque scelerisque, ipsum vitae tempus bibendum, nisl tortor consectetur quam, ut viverra sapien arcu tempus quam. Fusce euismod condimentum tristique. Praesent porttitor neque eget mauris adipiscing accumsan. Proin et sollicitudin risus, vel facilisis erat.</dd>
+	</dl>
+
+	<div id="navegacion">
+		<a id="anterior" href="#">&lt;&lt; Anterior</a>
+		<a id="siguiente" href="#">Siguiente &gt;&gt;</a>
+		<div class="clear"></div>
+	</div>
+	<!-- Crea una sección con los logotipos de redes sociales y el texto -->
+	<!-- El link deberá funcionar de manera única tanto en la imágen como en el texto -->
+	<ul>
+		<li><a href="#"><img src="http://files.softicons.com/download/social-media-icons/new-social-media-icons-by-mohamed-elgharabawy/png/512x512/facebook.png" width="30">Facebook</a></li>
+		<li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3hnOZniy72EnP8WXvVMO3wfzJy6yWP7IunHDunoX00yn9ojRQg" width="30">Twitter</a></li>
+		<li><a href="#"><img src="http://www.google.com/+/business/images/plus-badge.png" width="30">Google+</a></li>
+	</ul>
+
+	<!-- Al final de la página agrega una imágen de flecha hacia arriba que mande al inicio del documento -->
+	<a href="#inicio"><img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Arrow_Up.svg" width="50" alt="Ir al inicio" /></a>
+	</div>
+</body>
+</html>
